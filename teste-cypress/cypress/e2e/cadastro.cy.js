@@ -4,7 +4,7 @@ describe("Funcionalidade : Cadastro",()=>{
 beforeEach(()=>{
     cy.visit("register.html")
 })
-it.only("deve preencher formulario de cadastro com sucesso",()=>{
+it("deve preencher formulario de cadastro com sucesso",()=>{
 
 let email2 = `teste${Date.now()}@teste.com`   
 let nome = faker.person.fullName()
