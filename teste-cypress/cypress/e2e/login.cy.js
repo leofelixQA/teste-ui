@@ -1,3 +1,7 @@
+import user from "../fixtures/usuario.json"
+
+
+
 describe("Funcionalidade : Login",()=>{
 
     beforeEach(()=>{
@@ -10,7 +14,15 @@ describe("Funcionalidade : Login",()=>{
         cy.get('#login-btn').click()
     })
 
-    it.only('Deve fazer login Adm - usando comando customizado', () => {
+    it('Deve fazer login Adm - usando comando customizado', () => {
        cy.login("admin@biblioteca.com","admin123") 
+    });
+
+    it('Deve fazer login ADM usando importação de dados', () => {
+        cy.login(user.email,user.senha)
+    });
+
+    it('Deve fazer login Padrão usando importação de dados', () => {
+        cy.login(user.emailp,user.senhap)
     });
 })
