@@ -23,7 +23,7 @@ describe("Funcionalidade : Cadastro", () => {
         cy.url().should("include", "dashboard")
     })
 
-    it.only('Deve preencher cadastro -Usando comando customizado', () => {
+    it('Deve preencher cadastro -Usando comando customizado', () => {
         let nome = faker.person.fullName()
         let email = faker.internet.email()
         let telefone = faker.phone.number()
