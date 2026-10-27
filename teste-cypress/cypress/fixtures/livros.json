@@ -1,0 +1,22 @@
+[
+    {
+        "livro" : "O Hobbit",
+        "categoria" : "fantasia"
+    },
+    {
+        "livro" : "Dom Casmurro",
+        "categoria" : "ficção classica"
+    },
+    {
+        "livro" : "A Arte da Guerra",
+        "categoria" : "estrategia"
+    },
+    {
+        "livro" : "Harry Potter e a Pedra Filosofal",
+        "categoria" : "fantasia"
+    },
+    {
+        "livro" : "Metamorfose",
+        "categoria" : "ficção"
+    }
+]
